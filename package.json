@@ -1,0 +1,13 @@
+{
+  "name": "log-everything",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sls": "sls",
+    "deploy": "sls deploy -v"
+  },
+  "dependencies": {
+    "serverless": "^1.41.0"
+  }
+}

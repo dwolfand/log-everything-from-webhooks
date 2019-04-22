@@ -1,0 +1,21 @@
+service: log-everything # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  versionFunctions: false
+  stage: dev
+  region: us-east-1
+
+package:
+  exclude:
+    - node_modules/**
+    - '!node_modules/node-fetch/**'
+
+functions:
+  logger:
+    handler: handler.logger
+    events:
+      - http:
+          path: logger
+          method: any
