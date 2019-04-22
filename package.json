@@ -8,6 +8,7 @@
     "deploy": "sls deploy -v"
   },
   "dependencies": {
-    "serverless": "^1.41.0"
+    "serverless": "^1.41.0",
+    "serverless-apigw-binary": "^0.4.4"
   }
 }
